@@ -2,9 +2,20 @@ import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
+import YouTube from 'react-youtube';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faReact,
+  faSass,
+  faVuejs,
+  faJsSquare,
+  faGitSquare,
+  faHtml5,
+  faNpm,
+  faCss3Alt,
+} from '@fortawesome/fontawesome-free-brands';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
-import ProjectImg from '../Image/ProjectImg';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -22,13 +33,18 @@ const Projects = () => {
     }
   }, []);
 
+  const opts = {
+    height: '390',
+    width: '100%',
+  };
+
   return (
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="Projects" />
+          <Title title="Videos" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, url, repo, id, videoId, stack } = project;
 
             return (
               <Row key={id}>
@@ -99,9 +115,7 @@ const Projects = () => {
                             easing: 'cubic-bezier(.03,.98,.52,.99)',
                           }}
                         >
-                          <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
-                          </div>
+                          <YouTube opts={opts} videoId={videoId} />
                         </Tilt>
                       </a>
                     </div>
