@@ -19,7 +19,7 @@ export const heroData = {
 export const aboutData = {
   img: 'marcos.jpg',
   paragraphOne:
-    'My name is Marcos Frutos. I am a Front-End Developer with 5 years experience, mainly in professional environments.',
+    'My name is Marcos Frutos, I am half Spanish-British, and based in Amsterdam (Netherlands). I am a Front-End Developer with 5 years experience, mainly in professional environments.',
   paragraphTwo:
     'I have worked for companies such as Bynder, Siemens and currently, Helloprint. In Helloprint I create and maintain the Component Design System, built with VueJS (NuxtJS as a framework over it), TailwindCSS and flexbox, Modern Javascript ES6+, and Contentful API.',
   paragraphThree:
@@ -32,7 +32,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    videoId: '69ZyEw0T7Z8',
+    videoId: 'BKygiBDXdCI',
     title: 'Helloprint',
     info:
       'Developed with VueJS and NuxtJS as a main library. We have a huge Component Design System built over the time, where we have reusable components and custom ones. Components are built using BEM Methodology, TailwindCSS and Scoped SCSS, Contentful API and Block Designs, i18n localisation library using Crowdin.',
@@ -43,7 +43,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    videoId: '69ZyEw0T7Z8',
+    videoId: '_6SVwgl9UrI',
     title: 'Tesla Range Calculator',
     info:
       'This is already done in React and VueJS, but nobody did it with Vanilla Javascript. Well I did. Without using any major front-end libraries, I developed this Tesla Landing page with a range calculator using HTML5, SCSS, ES6+ Javascript (Intersection and Mutation Observers), and Webpack.',

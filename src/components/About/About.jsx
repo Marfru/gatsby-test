@@ -59,15 +59,7 @@ const About = () => {
                 <p className="about-wrapper__info-text">
                   {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
                 </p>
-                <div
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    marginBottom: '3rem',
-                    marginTop: '3rem',
-                    width: '100%',
-                  }}
-                >
+                <div className="about-wrapper__icons">
                   <FontAwesomeIcon icon={faReact} size="4x" />
                   <FontAwesomeIcon icon={faVuejs} size="4x" />
                   <FontAwesomeIcon icon={faJsSquare} size="4x" />

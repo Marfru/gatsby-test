@@ -37,6 +37,21 @@
       }
     }
 
+    &__icons {
+      display: flex;
+      justify-content: space-around;
+      margin: 3rem 0;
+      width: 100%;
+      flex-wrap: wrap;
+
+      & > svg {
+        @include respond(phone) {
+        flex: 1 0 21%;
+        margin: 1rem 0;
+        }
+      }
+    }
+
     &__info {
       display: flex;
       height: 100%;
